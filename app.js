@@ -17,6 +17,10 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'))
 app.get('/',(req, res) => 
  res.render('home.html')
 )
+app.use((res, req) => {
+ res.status(404).render('error.html')
+ console.log('>>Error page not found.')
+})
 
 //Set static
 app.use(express.static('views'))
