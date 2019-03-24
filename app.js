@@ -14,7 +14,7 @@ app.listen(port, () => {
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'))
 app.use('/dist', express.static(__dirname + '/node_modules/jquery/dist'))
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'))
-app.use('/node_modules', express.static(__dirname + '/node_modules'))
+app.use('/dist', express.static(__dirname + '/node_modules/popper.js/dist'))
 //Route mian
 app.get('/',(req, res) => 
  res.render('home.html')
