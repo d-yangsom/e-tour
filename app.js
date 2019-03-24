@@ -10,7 +10,7 @@ const port = 80;
 app.listen(port, () => {
  console.log('Server working...')
 });
-//Use Bootstrap + Jquery
+//Use Bootstrap + Jquery + popper
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'))
 app.use('/dist', express.static(__dirname + '/node_modules/jquery/dist'))
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'))
